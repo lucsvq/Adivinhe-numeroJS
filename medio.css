@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+header {
+    display: flex;
+    position: relative;
+    height: 80px;
+    align-items: center;
+}
+
+#escolha {
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.again {
+    width: 150px;
+    height: 50px;
+    border-radius: 0; 
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 30px;
+}
+
+#boxListra{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#listra {
+    width: 110%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+}
+
+#boxNumber {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    z-index: 1;
+}
+
+#checkScore {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+#check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#inputEscNum {
+    margin-bottom: 20px;
+    height: 70px;
+    width: 170px;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#checar {
+    width: 120px;
+    height: 40px;
+    border-radius: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+#start {
+    margin-bottom: 50px;
+}
+#ScoreHighscore {
+    width: 300px;
+    font-size: 13px;
+}

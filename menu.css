@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 30px;
+}
+
+#boxListra{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#listra {
+    width: 110%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+}
+
+#boxNumber {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 1;
+}
+
+#escDificuldade {
+    margin-top: 50px;
+    
+}
+
+#btns {
+    display: flex;
+}
+
+.btnDificuldade {
+    width: 200px;
+    height: 100px;
+    font-family: 'Press Start 2P', sans-serif;
+    border-radius: 0;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    transition: 0.1s;
+    margin: 12px;
+    -webkit-animation: btnDificuldade .9s linear infinite;
+    -moz-animation: btnDificuldade .9s linear infinite;
+    -ms-animation: btnDificuldade .9s linear infinite;
+    -o-animation: btnDificuldade .9s linear infinite;
+    animation: btnDificuldade .9s linear infinite;
+}
+
+.btnDificuldade:hover {
+    transform: translateY(-10px);
+    animation: none;
+}
+
+@keyframes btnDificuldade {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
