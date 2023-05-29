@@ -1,4 +1,3 @@
-
 let numeroSecreto = Math.trunc(Math.random()*20)+1;
 let score = 10
 let highscore = 0
@@ -20,9 +19,9 @@ document.querySelector('#checar').addEventListener('click', function() {
         highscore++;
         document.querySelector('#highscore').textContent = highscore
 
-    }else if(btnCheck > numeroSecreto) {
+    }else if (btnCheck !== numeroSecreto) {
         if(score > 1) {
-            document.querySelector('#start').textContent = '📈 Muito alto!'
+            document.querySelector('#start').textContent = btnCheck > numeroSecreto ? '📈 Muito alto!' : '📉 Muito baixo!';
 
             score--;
             document.querySelector('#score').textContent = score
@@ -33,22 +32,11 @@ document.querySelector('#checar').addEventListener('click', function() {
             document.querySelector('body').style.backgroundColor = '#d45353';
             document.querySelector('#boxNumber').style.width = '200px';
             document.querySelector('#highscore').textContent = 0
-        }
-    }else if(btnCheck < numeroSecreto) {
-        if(score > 1) {
-            document.querySelector('#start').textContent = '📉 Muito baixo!'
-
-            score--;
-            document.querySelector('#score').textContent = score
-        } else {
-            document.querySelector('#start').textContent = '💥 Voce perdeu'
-            document.querySelector('#score').textContent = 0
-            document.querySelector('body').style.backgroundColor = '#d45353';
-            document.querySelector('#boxNumber').style.width = '200px';
-            document.querySelector('#highscore').textContent = 0
-            document.querySelector('#number').textContent = numeroSecreto
         }
     }
+    
+    
+    
 })
 
 document.querySelector('.again').addEventListener('click', function () {
