@@ -1,6 +1,6 @@
 
 let numeroSecreto = Math.trunc(Math.random()*20)+1;
-let score = 2
+let score = 3
 let highscore = 0
 
 
@@ -52,7 +52,7 @@ document.querySelector('#checar').addEventListener('click', function() {
 })
 
 document.querySelector('.again').addEventListener('click', function () {
-    score = 2;
+    score = 3;
     numeroSecreto = Math.trunc(Math.random()*20)+1;
     document.querySelector('#inputEscNum').value = '';
     document.querySelector('#start').textContent = 'Começando a adivinhar. . .'

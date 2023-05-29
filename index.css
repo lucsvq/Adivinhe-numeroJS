@@ -75,7 +75,6 @@ section {
 
 .btnDificuldade:hover {
     transform: translateY(-10px);
-    animation: none;
 }
 
 @keyframes btnDificuldade {
